@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="app">
+        <div class="info">
+            <h1>IP Address Tracker</h1>
+            <form id="ip-form">
+                <input type="text" id="ip-input" placeholder="Search for any IP address or domain">
+                <button type="submit"><i class="fa-solid fa-angle-right"></i></button>
+            </form>
+            <div id="ip-details">
+                <p>IP Address<strong><span id="ip-address">192.212.174.101</span></strong></p>
+                <p>Location<strong><span id="ip-location">Brooklyn, NY 10001</span></strong></p>
+                <p>Timezone<strong><span id="ip-timezone">UTC-05:00</span></strong></p>
+                <p>ISP<strong><span id="ip-isp">SpaceX Starlink</span></strong></p>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/elasri21" target="_blank">elasri21</a>.
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

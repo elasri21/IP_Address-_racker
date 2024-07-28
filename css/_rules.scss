@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $family;
+}
+
+#app {
+    text-align: center;
+    .info {
+        @media (max-width: 767px) {
+            background-image: url("../images/pattern-bg-desktop.png") !important;
+        }
+        background-image: url("../images/pattern-bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 30px 20px;
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        #ip-form {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            #ip-input {
+                display: block;
+                width: 70%;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                background-color: #fff;
+                border-radius: 10px 0 0 10px;
+                font-size: 16px;
+                &::placeholder {
+                    transition: .3s linear;
+                    color: $dark-gray;
+                }
+            }
+            button {
+                display: block;
+                width: fit-content;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                background-color: $very-dark-gray;
+                color: #fff;
+                border-radius: 0 10px 10px 0;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+        #ip-details {
+            @media (min-width: 922px) {
+                p {
+                    width: calc(25% - 27.5px) !important;
+                }
+            }
+            @media (min-width: 768px) and (max-width: 921px) {
+                p {
+                    width: calc(50% - 45px) !important;
+                }
+            }
+            padding: 40px 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 20px;
+            p {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                text-align: left;
+                font-size: $text-size;
+                font-weight: 600;
+                color: $dark-gray;
+                text-transform: uppercase;
+                strong {
+                    font-size: 20px;
+                    color: $very-dark-gray;
+                }
+            }
+        }
+    }
+    #map {
+        height: 500px;
+    }
+}
+.attribution { 
+    padding: 10px;
+    font-size: 11px; 
+    text-align: center; 
+
+    a { color: hsl(228, 45%, 44%); 
+    }
+}
